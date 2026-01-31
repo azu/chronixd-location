@@ -1,15 +1,16 @@
 {
-  "name": "blued-location",
-  "main": "src/index.ts",
-  "compatibility_date": "2024-12-01",
-  "assets": {
-    "directory": "./viewer"
-  },
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "blued-location-db",
-      "migrations_dir": "migrations"
-    }
-  ]
+	"name": "blued-location",
+	"main": "src/index.ts",
+	"compatibility_date": "2024-12-01",
+	"assets": {
+		"directory": "./viewer"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "blued-location-db",
+			"database_id": "32291dd2-9c40-4423-81c8-e3bcf923e0e3",
+			"migrations_dir": "migrations"
+		}
+	]
 }
