@@ -29,9 +29,25 @@ pnpm wrangler d1 migrations apply blued-location-db --remote
 
 ## Overland 設定
 
+[Overland GPS Tracker](https://apps.apple.com/app/overland-gps-tracker/id1292426766) (iOS) を使用。
+
+GitHub: https://github.com/aaronpk/Overland-iOS
+
+### 設定手順
+
 1. Overland アプリを開く
-2. Settings > Server URL に `https://your-worker.workers.dev/api/locations` を設定
-3. Settings > Access Token に API_TOKEN を設定
+2. 右上の歯車アイコン → Settings
+3. **Server URL**: `https://your-worker.workers.dev/api/locations`
+4. **Access Token**: Workers の環境変数 `API_TOKEN` に設定した値
+5. 左上のスイッチをONでトラッキング開始
+
+### Tracking Mode
+
+| モード | 説明 | バッテリー消費 |
+|--------|------|---------------|
+| Significant Changes | 500m以上移動で記録（推奨） | 低 |
+| Standard | バランス型 | 中 |
+| High Frequency | 高精度・高頻度 | 高 |
 
 ## API
 
