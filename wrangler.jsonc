@@ -9,7 +9,6 @@
     {
       "binding": "DB",
       "database_name": "blued-location-db",
-      "database_id": "TODO_REPLACE_WITH_ACTUAL_ID",
       "migrations_dir": "migrations"
     }
   ]

@@ -16,19 +16,15 @@ cd blued-location
 # 2. Install
 pnpm install
 
-# 3. D1 データベース作成
-pnpm wrangler d1 create blued-location-db
-# 出力された database_id を wrangler.jsonc に設定
-
-# 4. マイグレーション適用
-pnpm wrangler d1 migrations apply blued-location-db --remote
-
-# 5. API Token 設定
+# 3. API Token 設定
 pnpm wrangler secret put API_TOKEN
 # 任意の文字列を入力
 
-# 6. デプロイ
+# 4. デプロイ (D1は自動作成される)
 pnpm run deploy
+
+# 5. マイグレーション適用
+pnpm wrangler d1 migrations apply blued-location-db --remote
 ```
 
 ## Overland 設定
