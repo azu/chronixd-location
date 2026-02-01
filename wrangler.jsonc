@@ -6,7 +6,8 @@
 		"directory": "./viewer"
 	},
 	"vars": {
-		"NOMINATIM_USER_AGENT": "blued-location/1.0 (https://github.com/azu/blued-location)"
+		"NOMINATIM_USER_AGENT": "blued-location/1.0 (https://github.com/azu/blued-location)",
+		"NOMINATIM_EMAIL": "azuciao@gmail.com"
 	},
 	"d1_databases": [
 		{
