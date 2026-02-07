@@ -1,5 +1,5 @@
 {
-  "name": "blued-location",
+  "name": "chronixd-location",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -8,8 +8,8 @@
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "test": "vitest",
-    "db:migrate:local": "wrangler d1 migrations apply blued-location-db --local",
-    "db:migrate": "wrangler d1 migrations apply blued-location-db"
+    "db:migrate:local": "wrangler d1 migrations apply chronixd-location-db --local",
+    "db:migrate": "wrangler d1 migrations apply chronixd-location-db"
   },
   "dependencies": {
     "valibot": "^1.2.0"

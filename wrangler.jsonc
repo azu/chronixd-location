@@ -1,17 +1,17 @@
 {
-	"name": "blued-location",
+	"name": "chronixd-location",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-01-28",
 	"assets": {
 		"directory": "./viewer"
 	},
 	"vars": {
-		"NOMINATIM_USER_AGENT": "blued-location/1.0 (https://github.com/azu/blued-location)"
+		"NOMINATIM_USER_AGENT": "chronixd-location/1.0 (https://github.com/azu/chronixd-location)"
 	},
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_name": "blued-location-db",
+			"database_name": "chronixd-location-db",
 			"database_id": "32291dd2-9c40-4423-81c8-e3bcf923e0e3",
 			"migrations_dir": "migrations"
 		}

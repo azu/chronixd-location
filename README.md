@@ -1,17 +1,17 @@
-# blued-location
+# chronixd-location
 
 Overland iOS アプリから位置情報を受信し、Cloudflare Workers + D1 に保存するシステム。
 
 ## Deploy
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/azu/blued-location)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/azu/chronixd-location)
 
 または手動でデプロイ:
 
 ```bash
 # 1. Clone
-git clone https://github.com/azu/blued-location.git
-cd blued-location
+git clone https://github.com/azu/chronixd-location.git
+cd chronixd-location
 
 # 2. Install
 pnpm install
@@ -24,7 +24,7 @@ pnpm wrangler secret put API_TOKEN
 pnpm run deploy
 
 # 5. マイグレーション適用
-pnpm wrangler d1 migrations apply blued-location-db --remote
+pnpm wrangler d1 migrations apply chronixd-location-db --remote
 ```
 
 ## 環境変数
